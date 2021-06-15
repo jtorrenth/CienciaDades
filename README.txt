@@ -56,6 +56,8 @@ seguidament fem git add nomfitxer per a preparar-lo pel commit
 en següent lloc commit -m 'Missatge del commit'
 finalment fem un push per a aplicar els canvis.
 
+Finalment si que hem hagut de crear un git per a poder setejar el setup.py
+
 -------------- Altra informació --------------
 Quan he intentat pujar el setup.py mitjançant
 pip install yourpackage
