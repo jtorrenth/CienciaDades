@@ -10,6 +10,7 @@ Linia 28 - Packages
 Linia 40 - Main
 Linia 44 - Altres llibreries
 Linia 48 - Ús de Git
+Linia 59 - Altra informació - Setup.py
 
 ------- Respostes teòriques ---------
 Respecte l'excercici 1.2, penso que no caldria tocar res ja que 1Gb no
@@ -55,8 +56,25 @@ seguidament fem git add nomfitxer per a preparar-lo pel commit
 en següent lloc commit -m 'Missatge del commit'
 finalment fem un push per a aplicar els canvis.
 
+-------------- Altra informació --------------
+Quan he intentat pujar el setup.py mitjançant
+pip install yourpackage
+python setup.py register
+python setup.py upload
 
+M'ha donat el següent error que no he estat capaç de resoldre:
 
+Upload failed (403): Invalid or non-existent authentication information. See https://pypi.org/help/#invalid-auth for more information.
+error: Upload failed (403): Invalid or non-existent authentication information. See https://pypi.org/help/#invalid-auth for more information.
 
+He seguit fent proves pero em segueix donant errors:
+Invalid or non-existent authentication information. See https://test.pypi.org/help/#invalid-auth for more information.
+Just desprès d'afegir com a username i password la conta que acabo de crear al propi site
+De la mateixa manera he probat a crear un API Token desde la web (user: __token__ , password: pypi-AgEIcHlwaS5vcmcCJDA1YzFiMGUxLWU4MmEtNGUzMS04OGMwLTMyY2RhMTZjNDRjZAACJXsicGVybWlzc2lvbnMiOiAidXNlciIsICJ2ZXJzaW9uIjogMX0AAAYgm73P6lTTWF5eLzhCEg5jis6lyK61doJo-QQVK6I2MZo
+i tampoc funciona.
 
+Potser per això el fitxer setup.py finalment no té cap funcionalitat
+Si funciones seria mitjançant la comanda:
+python -m pip install --index-url https://test.pypi.org/simple/ --no-deps testpypi-jtorrenth
 
+On python es un alias, depen de la maquina podria ser py...
